@@ -1,0 +1,27 @@
+  {{ setTitle "Power of Nature | Edit Event" }}
+
+        <section id="create-container">
+            <div class="create-container-info">
+                <h1>Edit Event</h1>
+                <form method="POST">
+                    <label>Name of the Disaster:</label>
+                    <input type="text" id="name" name="name" placeholder="..." value="{{disaster.name}}">
+                    <label>Type of Disaster:</label>
+                    <select id="type" name="type">
+                        <option value="">Select Category</option>
+                        {{#each categories}}
+                         <option value="{{value}}" {{selected}}>{{label}}</option>
+                        {{/each}}
+                    </select>
+                    <label>Year of the Event:</label>
+                    <input type="number" id="elevations" name="year" placeholder="..."  value="{{disaster.year}}">
+                    <label>Location:</label>
+                    <input type="text" id="location" name="location" placeholder="..." value="{{disaster.location}}">
+                    <label>Image:</label>
+                    <input type="text" id="image" name="image" placeholder="http://..."  value="{{disaster.image}}">
+                    <label>Description:</label>
+                    <textarea id="description" name="description" placeholder="...">{{disaster.description}}</textarea>
+                    <input type="submit" id="btn" value="Submit"></input>
+                </form>
+            </div>
+        </section>

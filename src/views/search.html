@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="./static/css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Power of Nature</a></li>
+                <li><a href="#">Create Event</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- In case of error, you should display div with class "errorContainer" -->
+        <!-- You can choose to display the first error or all of them (error message/s in your opinion) -->
+
+        <!-- <div>
+            <div class="errorContainer">
+                <p>Error</p>
+            </div>
+        </div> -->
+
+        <section class="event-search">
+            <h1 id="title">Search</h1>
+
+            <form class="search-form" action="#" method="">
+                <input type="text" class="search-event" name="" placeholder="Search by Name...">
+                <select id="type" name="">
+                    <option value="Wildfire">Wildfire</option>
+                    <option value="Flood">Flood</option>
+                    <option value="Earthquake">Earthquake</option>
+                    <option value="Hurricane">Hurricane</option>
+                    <option value="Drought">Drought</option>
+                    <option value="Tsunami">Tsunami</option>
+                    <option value="Other">Other</option>
+                </select>
+                <button type="submit" class="btn-search">Search</button>
+            </form>
+
+            <div class="search-result">
+                <div class="search-list">
+                    <div class="event">
+                        <div class="img">
+                            <img
+                                src="https://static.scientificamerican.com/sciam/cache/file/2AE37833-55E8-4973-85CFC20E82A23A45_source.jpg">
+                        </div>
+                        <div class="event-info">
+                            <h1>Haiti Earthquake</h1>
+                            <p><span>Location: </span>Haiti</p>
+                            <p><span>Type: </span>Earthquake</p>
+                        </div>
+
+                        <a href="#" class="btn-details">Details</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- <div class="no-match">
+                <p>No match was found!</p>
+            </div> -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy JS Back-End 2025</p>
+    </footer>
+</body>
+
+</html>

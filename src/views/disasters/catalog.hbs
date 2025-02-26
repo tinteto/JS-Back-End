@@ -1,0 +1,28 @@
+    {{ setTitle "Power of Nature | Catalog" }}
+  
+   <section class="catalog">
+            <h1 id="title"><span>Power of Nature</span></h1>
+     
+            <div class="item-list">
+                       {{#each disasters}}
+                <div class="event">
+                    <div class="img">
+                        <img src="{{this.image}}">
+                    </div>
+                    <div class="event-info">
+                        <h1>{{this.name}}</h1>
+                        <p><span>Location: </span>{{this.location}}</p>
+                        <p><span>Type: </span>{{this.type}}</p>
+                    </div>
+
+                    <a href="/disasters/{{this.id}}/details" class="btn-details">Details</a>
+                </div>
+            {{else}}
+             <div class="no-event">
+                <p>There are no events found yet!</p>
+            </div> 
+            {{/each}}
+            </div>
+        </section>
+
+
